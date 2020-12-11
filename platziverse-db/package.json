@@ -1,0 +1,15 @@
+{
+  "name": "platziverse-db",
+  "version": "1.0.0",
+  "description": "A Simple IoT Plataform - DB Module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://https://github.com/fcastiglioni/platziverse"
+  },
+  "author": "Federico",
+  "license": "MIT"
+}
