@@ -1,0 +1,8 @@
+node_modules
+platziverse-agent/node_modules
+platziverse-api/node_modules
+platziverse-cli/node_modules
+platziverse-web/node_modules
+platziverse-deploy
+platziverse-mqtt/node_modules
+platziverse-db/node_modules

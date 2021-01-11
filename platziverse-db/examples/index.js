@@ -8,8 +8,8 @@ async function run () {
     username: process.env.DB_USER || 'platzi',
     password: process.env.DB_PASS || 'platzi',
     host: process.env.DB_HOST || 'localhost',
-    dialect: 'postgres',
-    
+    dialect: 'postgres'
+
   }
 
   const { Agent, Metric } = await db(config).catch(handleFatalError)
@@ -35,17 +35,16 @@ async function run () {
   console.log(metrics)
 
   const metric = await Metric.create(agent.uuid, {
-      type: 'memory',
-      value: '300'
+    type: 'memory',
+    value: '300'
   }).catch(handleFatalError)
 
   console.log('--metric--')
   console.log(metric)
 
-  const metricsByType = await Metric.findByTypeAgentUuid('memory',agent.uuid).catch(handleFatalError)
+  const metricsByType = await Metric.findByTypeAgentUuid('memory', agent.uuid).catch(handleFatalError)
   console.log('--metrics--')
   console.log(metricsByType)
-
 }
 
 function handleFatalError (err) {
